@@ -3,6 +3,7 @@
 import Team from './js/task1/Team(with iterator).js';
 import TeamWithGenerator from './js/task1/Team(with generator).js';
 import Character from './js/task1/Character.js';
+import canIterate from './js/task1/canIterate.js';
 
 const daemon = new Character('Dima', 'Daemon', 100, 1, 20, 50);
 const magician = new Character('Ivan', 'magocian', 80, 2, 25, 60);
@@ -27,3 +28,12 @@ console.log('TASK TWO');
 for (const i of teamTwo) {
   console.log(i);
 }
+
+// EXTRA TASK
+console.log('EXTRA TASK');
+
+console.log(canIterate(new Map()));
+console.log(canIterate(new Set()));
+console.log(canIterate(null));
+console.log(canIterate(10));
+console.log(canIterate('Netology'));
